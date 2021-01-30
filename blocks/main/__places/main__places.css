@@ -1,0 +1,28 @@
+.main__places {
+  margin-bottom: 92px;
+  padding-left: calc(48px + 100 * ((100vw - 1024px) / 256));
+  padding-right: calc(48px + 100 * ((100vw - 1024px) / 256));
+}
+@media (min-width: 1281px) {
+  .main__places {
+    padding: 0 148px;
+  }
+}
+@media (max-width: 1024px) {
+  .main__places {
+    padding: 0 48px;
+  }
+}
+@media (max-width: 768px) {
+  .main__places {
+    padding: 0 24px;
+    margin-bottom: 90px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main__places {
+    padding: 0;
+    margin-bottom: 66px;
+  }
+}

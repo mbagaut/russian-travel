@@ -1,0 +1,31 @@
+.places__text {
+  margin: 0;
+  margin-bottom: 26px;
+  font-size: 18px;
+  line-height: 1.63;
+  font-size: calc(16px + 2 * ((100vw - 320px) / 703));
+}
+
+.places__text:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 1024px) {
+  .places__text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .places__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .places__text {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 320px) {
+  .places__text {
+    max-width: 285px;
+  }
+}

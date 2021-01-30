@@ -1,0 +1,16 @@
+.main__photo-grid {
+  margin-bottom: 92px;
+  padding: 0 48px;
+}
+@media (max-width: 768px) {
+  .main__photo-grid {
+    margin-bottom: 88px;
+    padding: 0 24px;
+  }
+}
+@media (max-width: 520px) {
+  .main__photo-grid {
+    margin-bottom: 64px;
+    padding: 0 16px;
+  }
+}

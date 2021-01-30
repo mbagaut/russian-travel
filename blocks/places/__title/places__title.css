@@ -1,0 +1,31 @@
+.places__title {
+  -ms-flex-item-align: end;
+      align-self: end;
+  margin: 0;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.08;
+  font-size: calc(42px + 30 * ((100vw - 768px) / 255));
+}
+@media (min-width: 1024px) {
+  .places__title {
+    font-size: 72px;
+  }
+}
+@media (max-width: 768px) {
+  .places__title {
+    max-width: 330px;
+    font-size: 42px;
+  }
+}
+@media (max-width: 700px) {
+  .places__title {
+    margin-bottom: 32px;
+    padding: 0 16px;
+  }
+}
+@media (max-width: 320px) {
+  .places__title {
+    font-size: 32px;
+  }
+}

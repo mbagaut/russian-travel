@@ -1,0 +1,8 @@
+.header__lang {
+  margin-right: 18px;
+  list-style-type: none;
+}
+
+.header__lang:last-child {
+  margin: 0;
+}

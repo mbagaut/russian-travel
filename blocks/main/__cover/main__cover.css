@@ -1,0 +1,8 @@
+.main__cover {
+  padding: 0 48px;
+}
+@media (max-width: 1024px) {
+  .main__cover {
+    padding: 0px;
+  }
+}

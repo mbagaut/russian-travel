@@ -1,0 +1,13 @@
+.page__main {
+  margin-bottom: 92px;
+}
+@media (max-width: 768px) {
+  .page__main {
+    margin-bottom: 88px;
+  }
+}
+@media (max-width: 700px) {
+  .page__main {
+    margin-bottom: 64px;
+  }
+}

@@ -1,0 +1,26 @@
+.main__lead {
+  margin-bottom: 92px;
+  padding-left: calc(48px + 100 * ((100vw - 1024px) / 256));
+  padding-right: calc(48px + 100 * ((100vw - 1024px) / 256));
+}
+@media (min-width: 1281px) {
+  .main__lead {
+    padding: 0 148px;
+  }
+}
+@media (max-width: 1024px) {
+  .main__lead {
+    padding: 0 48px;
+  }
+}
+@media (max-width: 768px) {
+  .main__lead {
+    margin-bottom: 88px;
+    padding: 0;
+  }
+}
+@media (max-width: 520px) {
+  .main__lead {
+    margin-bottom: 64px;
+  }
+}
