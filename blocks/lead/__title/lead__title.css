@@ -1,12 +1,16 @@
 .lead__title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 720px;
   margin: 0 auto;
   margin-bottom: 32px;
+
   font-weight: 900;
   line-height: 1.04;
   text-align: center;
   color: #fff;
-  font-size: calc(40px + 56 * ((100vw - 320px) / 448));
+  /* Свыше размера экрана 768px шрифт будет не более 96px, а с 767 до 320 плавно уменьшается до 40px. */
+  font-size: calc(40.5px + 55.5 * ((100vw - 321px) / 446));
 }
 @media (min-width: 768px) {
   .lead__title {

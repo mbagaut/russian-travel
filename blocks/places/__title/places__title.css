@@ -2,10 +2,12 @@
   -ms-flex-item-align: end;
       align-self: end;
   margin: 0;
+
   font-weight: 900;
   font-size: 72px;
   line-height: 1.08;
-  font-size: calc(42px + 30 * ((100vw - 768px) / 255));
+  /* Свыше размера экрана 1024px шрифт будет не более 72px, а с 1023 до 768 плавно уменьшается до 42px, далее по брифу. */
+  font-size: calc(43px + 29 * ((100vw - 769px) / 254));
 }
 @media (min-width: 1024px) {
   .places__title {

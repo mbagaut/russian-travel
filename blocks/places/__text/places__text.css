@@ -1,9 +1,12 @@
 .places__text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   margin-bottom: 26px;
-  font-size: 18px;
+
   line-height: 1.63;
-  font-size: calc(16px + 2 * ((100vw - 320px) / 703));
+  /* Свыше размера экрана 1024px шрифт будет не более 18px, а с 1023 до 768 плавно уменьшается до 16px. */
+  font-size: calc(16.5px + 1.5 * ((100vw - 769px) / 254));
 }
 
 .places__text:last-child {
@@ -22,10 +25,5 @@
 @media (max-width: 700px) {
   .places__text {
     padding: 0 16px;
-  }
-}
-@media (max-width: 320px) {
-  .places__text {
-    max-width: 285px;
   }
 }
