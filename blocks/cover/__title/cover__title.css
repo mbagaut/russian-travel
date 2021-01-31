@@ -1,12 +1,17 @@
 .cover__title {
-  margin: 0;
-  margin-bottom: 32px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
-  max-width: calc(230px + 320 * ((100vw - 320px) / 447));
+  margin-top: 0;
+  margin-bottom: 32px;
 
   font-weight: 900;
   line-height: 1.07;
   text-align: center;
+  color: white;
+
+  max-width: calc(230px + 320 * ((100vw - 320px) / 447));
 
   /* Свыше размера экрана 768px шрифт будет не более 72px, а с 767 до 320 плавно уменьшается до 32px. */
   font-size: calc(32.5px + 39.5 * ((100vw - 320px) / 447));

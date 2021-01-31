@@ -1,10 +1,30 @@
 .cover__overlay {
   position: relative;
-  display: block;
-  padding-top: 62.6%;
 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  /* Паддинг в процентах берет за основу ширину родителя. Чтобы разместить блок по центру и задать размер картинке по брифу нужно сверху и снизу отступить равное расстояние около одной трети высоты блока (к примеру на макс.размере картинки - 740/3 = 246px). Однако, между брейкпоинтами по брифу меняется соотношение сторон картинки, и относительная величина не позволяет сохранять пропорции блока, т.к. меняет величину отступов, а следовательно и высоту картинки линейно. В данном случае я использую зависимость от ширины экрана, где при ширинах 1280px и 320px размер картинки по высоте строго соответствует макету, а между ними плавно изменяется, при этом на экране 1024px и 768px отклонение высоты картинки от макета не превышает 20px. Чувствую есть какой-то более простой и красивый способ решить эту задачу, но ничего умнее придумать не смог:) Напишете, пожалуйста, куда копать, если такой способ существует */
+
+  padding-top: calc(124px + 120.017 * ((100vw - 768px) / 511));
+  padding-bottom: calc(124px + 120.017 * ((100vw - 768px) / 511));
+  text-align: center;
   text-decoration: none;
+
   background-image: url(../../../images/cover-trains.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -25,7 +45,18 @@
 }
 
 .cover__overlay:hover::before {
-  content: "";
   opacity: 0.8;
 }
 
+@media (min-width: 1280px) {
+  .cover__overlay{
+    padding-top: 244.017px;
+    padding-bottom: 244.017px;
+  }
+}
+@media (max-width: 320px) {
+  .cover__overlay{
+    padding-top: 25.7833px;
+    padding-bottom: 25.7833px;
+  }
+}

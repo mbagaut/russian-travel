@@ -1,4 +1,4 @@
-.places__title {
+.card__title {
   -ms-flex-item-align: end;
       align-self: end;
   margin: 0;
@@ -9,24 +9,24 @@
   font-size: calc(43px + 29 * ((100vw - 769px) / 254));
 }
 @media (min-width: 1024px) {
-  .places__title {
+  .card__title {
     font-size: 72px;
   }
 }
 @media (max-width: 768px) {
-  .places__title {
+  .card__title {
     max-width: 330px;
     font-size: 42px;
   }
 }
 @media (max-width: 700px) {
-  .places__title {
+  .card__title {
     margin-bottom: 32px;
     padding: 0 16px;
   }
 }
 @media (max-width: 320px) {
-  .places__title {
+  .card__title {
     font-size: 32px;
   }
 }

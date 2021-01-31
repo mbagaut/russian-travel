@@ -1,4 +1,4 @@
-.places__text {
+.card__text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -9,21 +9,21 @@
   font-size: calc(16.5px + 1.5 * ((100vw - 769px) / 254));
 }
 
-.places__text:last-child {
+.card__text:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 1024px) {
-  .places__text {
+  .card__text {
     font-size: 18px;
   }
 }
 @media (max-width: 768px) {
-  .places__text {
+  .card__text {
     font-size: 16px;
   }
 }
 @media (max-width: 700px) {
-  .places__text {
+  .card__text {
     padding: 0 16px;
   }
 }
