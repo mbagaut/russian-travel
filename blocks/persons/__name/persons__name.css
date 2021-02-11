@@ -1,0 +1,18 @@
+.persons__name {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0;
+
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+@media (max-width: 768px) {
+  .persons__name {
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,26 @@
+.video__title {
+  max-width: 720px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.083;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .video__title {
+    margin-bottom: 31px;
+
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 520px) {
+  .video__title {
+    margin-bottom: 16px;
+
+    font-size: 32px;
+  }
+}

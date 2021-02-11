@@ -1,0 +1,26 @@
+.video-content__title {
+  position: absolute;
+  top: 58.51%;
+  left: 5.14%;
+  z-index: 2;
+
+  max-width: 322px;
+  margin: 0;
+
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.083;
+}
+
+@media (max-width: 1024px) {
+  .video-content__title {
+    top: 51.74%;
+    left: 6.58%;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-content__title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,29 @@
+.persons__subtitle {
+  max-width: 640px;
+  margin: 0 auto;
+  margin-bottom: 71px;
+
+  font-size: 24px;
+  line-height: 1.46;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .persons__subtitle {
+    margin-bottom: 66px;
+  }
+}
+
+@media (max-width: 520px) {
+  .persons__subtitle {
+    margin-bottom: 42px;
+
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .persons__subtitle {
+    margin-bottom: 32px;
+  }
+}
