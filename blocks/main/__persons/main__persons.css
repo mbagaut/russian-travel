@@ -1,0 +1,23 @@
+.main__persons {
+  margin-bottom: 102px;
+  padding: 0 48px;
+}
+
+@media (max-width: 768px) {
+  .main__persons {
+    padding: 0 64px;
+  }
+}
+
+@media (max-width: 520px) {
+  .main__persons {
+    margin-bottom: 48px;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main__persons {
+    margin-bottom: 64px;
+  }
+}

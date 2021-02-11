@@ -1,0 +1,20 @@
+.video-content__time {
+  position: absolute;
+  top: 51.08%;
+  left: 5.14%;
+  z-index: 2;
+
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+}
+
+@media (max-width: 1024px) {
+  .video-content__time {
+    top: 43.4%;
+    left: 6.58%;
+  }
+}

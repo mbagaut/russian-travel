@@ -1,0 +1,18 @@
+.persons__text {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+@media (max-width: 768px) {
+  .persons__text {
+    margin-bottom: 47px;
+
+    font-size: 16px;
+  }
+}

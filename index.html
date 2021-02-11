@@ -23,7 +23,11 @@
       <section class="main__lead lead">
         <h1 class="lead__title">Путешествия по России</h1>
         <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-        <img class="lead__image" src="images/lead-polka.jpg" alt="Спящая девушка в вагоне поезда на фоне маршрута путешествия">
+        <video class="lead__image" autoplay loop muted>
+          <source src="media/lead-polka.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+          <source src="media/lead-polka.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
+          <img src="images/lead-polka.jpg" alt="Спящая девушка в вагоне поезда на фоне маршрута путешествия">
+        </video>
         <p class="lead__caption">ваша полка — верхняя</p>
       </section>
 
@@ -127,6 +131,49 @@
                 в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
             </div>
           </article>
+      </section>
+
+      <section class="main__video video">
+        <h2 class="video__title">В глубины Земли<br>и в дальний космос</h2>
+        <p class="video__subtitle">Видео от студии Stereotactic о местах в России, где ведутся фундаментальные исследования</p>
+        <div class="video__content video-content">
+
+          <a class="video-content__item" href="https://vimeo.com/81106671" target="_blank">
+            <img class="video-content__image" src="images/kamchatka.jpg" alt="Камчатка">
+            <p class="video-content__time">6:30</p>
+            <h3 class="video-content__title">Colors of Kamchatka</h3>
+            <p class="video-content__subtitle">Director: Pavel Karykhalin</p>
+          </a>
+
+          <a class="video-content__item" href="https://vimeo.com/290675450" target="_blank">
+            <img class="video-content__image" src="images/observatory.jpg" alt="Обсерватория">
+            <p class="video-content__time">24:45</p>
+            <h3 class="video-content__title">Обсерватория | Observatory</h3>
+            <p class="video-content__subtitle">Director: Alexander Khudokon</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="main__persons persons">
+        <h2 class="persons__title">Фотографы, снимающие Россию</h2>
+        <p class="persons__subtitle">Природа и люди вдохновили их работы, удостоенные наград на международных конкурсах</p>
+        <div class="persons__cards">
+          <article class="persons__card">
+            <img class="persons__photo" src="images/lyagushkin.jpg" alt="Виктор Лягушкин">
+            <p class="persons__text">«Если вам кажется, что в России ничего не происходит, то просто выгляньте “наружу”…»</p>
+            <p class="persons__name">Виктор Лягушкин</p>
+          </article>
+          <article class="persons__card">
+            <img class="persons__photo" src="images/hafizov.jpg" alt="Иван Хафизов">
+            <p class="persons__text">«Если в город едут туристы — неважно за чем они туда едут: за шамбалой или фрески Рублева искать, или на родину Тарковского — туристы обеспечивают любой город молодёжью, рабочими местами и в конечном счёте наполняют его жизнью.»</p>
+            <p class="persons__name">Иван Хафизов</p>
+          </article>
+          <article class="persons__card">
+            <img class="persons__photo" src="images/maksimshin.jpg" alt="Сергей Максимишин">
+            <p class="persons__text">«Ты приезжаешь, и люди рассказывают тебе, как им плохо. А когда ты покажешь, как им плохо, то ты сволочь и всё очернил.»</p>
+            <p class="persons__name">Сергей Максимишин</p>
+          </article>
+        </div>
       </section>
 
       <section class="main__cover cover">

@@ -1,0 +1,32 @@
+.video-content__image {
+  display: block;
+  max-width: 583px;
+  -webkit-transition: 2s ease;
+  -o-transition: 2s ease;
+  transition: 2s ease;
+}
+
+@media (max-width: 1024px) {
+  .video-content__image {
+    max-height: 288px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-content__image {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 520px) {
+  .video-content__image {
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 395px) {
+  .video-content__image {
+    max-height: 200px;
+  }
+
+}

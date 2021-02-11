@@ -1,0 +1,16 @@
+.persons__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .persons__cards {
+    display: block;
+    max-width: 382px;
+    margin: 0 auto;
+  }
+}

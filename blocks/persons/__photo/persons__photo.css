@@ -1,0 +1,13 @@
+.persons__photo {
+  -ms-flex-item-align: center;
+      align-self: center;
+  max-width: 98px;
+  margin-bottom: 42px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .persons__photo {
+    margin-bottom: 16px;
+  }
+}
